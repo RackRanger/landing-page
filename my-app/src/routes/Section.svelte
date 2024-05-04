@@ -23,18 +23,39 @@
     function isLearningPage() {
         return id === "section5" ;
     }
+
+        function toggleFullScreen() {
+        const iframe = document.getElementById('iframe');
+        if (!document.fullscreenElement) {
+        iframe.requestFullscreen().catch(err => {
+        console.error(`Error attempting to enable full-screen mode: ${err.message}`);
+    });
+    } else {
+        document.exitFullscreen();
+    }
+    }
 </script>
 
 <section id={id} class="section">
 
     {#if isDashboard()}
-        <header class="header">{title}</header>
-        <GrafanaDashboard />
-    {:else if isProblemPage()}
-        <header class="header">{title}</header>
-        <div class="problemStatement">
-            Internal monitoring only tells half the story
+        <div class="dashboard ">
+            <header class="header">{title}</header>
         </div>
+        <GrafanaDashboard />
+        <div class="button-wrapper">
+            <button class="button" on:click={toggleFullScreen}>Expand</button>
+        </div>
+    {:else if isProblemPage()}
+      <div class="containerwhite">
+          <div class="white-rounded-text-field-the-idea">
+              <header class="header">{title}</header>
+              <div class="problemStatement">
+                  Internal monitoring only tells half the story
+                  <img style="height:250px; width:250px;" src="servertografana.svg" alt="Description of the image">
+              </div>
+          </div>
+      </div>
     {:else if isArchitecturePage()}
         <div >
             <header class="header">{title}</header>
@@ -63,6 +84,30 @@
 
     {:else if isLearningPage()}
         <header class="header">{title}</header>
+        <div class="profile-pics">
+            <div style="padding: 30px;">
+                <img class="profile-pic" src="justus.svg" alt="Description of the image">
+                <div class="personal-learning">Justus</div>
+                <div class="personal-learning"> "It was an amazing weekend for me ite in svelte a framework I never used before!"  </div>
+            </div>
+            <div style="padding: 30px;">
+                <img class="profile-pic" src="slushee.svg" alt="Description of the image">
+                <div class="personal-learning">Pol</div>
+                <div class="personal-learning"> "It was an aelte a framework I never used before!"  </div>
+
+            </div>
+            <div style="padding: 30px;">
+                <img class="profile-pic" src="valentin.svg" alt="Description of the image">
+                <div class="personal-learning">Valentin</div>
+                <div class="personal-learning"> "It was aable to build this website in svelte a framework I never used before!"  </div>
+            </div >
+            <div style="padding: 30px;">
+                <img class="profile-pic" src="miika.svg" alt="Description of the image">
+                <div class="personal-learning">Miika</div>
+                <div class="personal-learning"> "It was an amazing weekend for me because I was able to build this website in svelte a framework I never used before!"  </div>
+
+            </div>
+        </div>
 
     {/if}
 
@@ -75,16 +120,48 @@
         height: 40px;
         margin-right: 10px;
     }
+    .personal-learning {
+        display: grid;
+        justify-content: center;
+        width: 200px;
+        margin-top: 15px;
+        color: black;
+
+    }
+    .profile-pic {
+        width: 200px;
+        height: 200px;
+    }
+    .profile-pics {
+        display: flex;
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically */
+        margin-left: 100px;
+        margin-right: 100px;
+
+    }
+    .button-wrapper {
+        justify-content: center;
+        display: flex;
+    }
     .img {
         width: 60px;
         height: 60px;
         margin-right: 10px;
+    }
+    .dashboard {
+        justify-content: center;
+        display: flex;
+        align-items: center;
+
+
     }
     .images {
         display: flex;
         justify-content: center; /* Center horizontally */
         align-items: center; /* Center vertically */
     }
+
     .first-page {
         text-align: center; /* Center the text horizontally */
         font-size: 70px; /* Set the font size to 36 pixels or adjust as needed */
@@ -95,12 +172,25 @@
 
 
     }
+    .button {
+        display: grid;
+        margin-left: 50px;
+        padding: 8px 16px;
+        justify-content: center;
+        background-color: #3A5A40 ;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        height: 40px;
+    }
     .header {
-        padding: 30px;
+        margin-bottom: 30px;
         font-size: 50px;
-        margin:0px;
         justify-content: center;
         display: grid;
+        font-weight: bold;
+
     }
     .section {
         height: 100vh;
@@ -115,6 +205,15 @@
         color: black;
     }
 
+    .white-rounded-text-field-the-idea {
+        width: 90%; /* Adjust width as needed */
+        padding: 20px;
+        background-color: #f5f5f5; /* Light gray color */
+        border-radius: 10px;
+        color: black;
+        justify-content: center;
+    }
+
     .white-rounded-text-field:last-child {
         margin-right: 0; /* Remove right margin from the last box to prevent extra spacing */
     }
@@ -124,6 +223,8 @@
     }
     .problemStatement {
         color: black;
+        display:grid;
+        justify-content: center;
 
     }
 

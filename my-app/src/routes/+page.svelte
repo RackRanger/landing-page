@@ -18,18 +18,17 @@
 </script>
 
 <header class="global-header">
-  <h1 style="margin-right: 5px;">Serfana</h1>
-  <img class="img" src="namecheap.svg" alt="Description of the image">
-  <a href="#section2" class="navbaritems">The Problem</a>
+  <img class="logo" src="logo.svg" alt="Description of the image">
+  <a href="#section2" class="navbaritems">The Idea</a>
   <a href="#section3" class="navbaritems">Our Dashboards</a>
   <a href="#section4" class="navbaritems">The Architecture</a>
-  <a href="#section5" class="navbaritems">Learning</a>
+  <a href="#section5" class="navbaritems">Our Learnings</a>
 
 </header>
 
 <main class ="mainbody">
 
-  <Section id="section2" title="The Problem">
+  <Section id="section2" title="The Idea">
 
   </Section>
   <Section id="section3" title="Our Dashboards">
@@ -37,7 +36,7 @@
   <Section id="section4" title="The Architecture">
 
   </Section>
-  <Section id="section5" title="Learning">
+  <Section id="section5" title="Our Learnings">
 
   </Section>
 
@@ -54,10 +53,10 @@
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background: linear-gradient(to bottom right, #667eea, #764ba2); /* Gradient background */
+    background:  #DAD7CD  ; /* Gradient background */
     background-size: cover;
     background-attachment: fixed;
-    color: white;
+    color: black;
   }
 
   .navbaritems {
@@ -76,15 +75,16 @@
   .mainbody {
      margin-top: 100px;
      overflow-y: auto;
-     scroll-snap-type: y mandatory;
+      margin-right: -15px;
+    scroll-snap-type: y mandatory;
      height: calc(100vh - 100px); /* Set height to fill the remaining viewport space after considering the fixed header */
   }
-
-  .img {
-    width: 60px;
-    height: 60px;
+  .logo {
+    width: 120px;
+    height: 120px;
     margin-right: 10px;
   }
+
 
 
 
