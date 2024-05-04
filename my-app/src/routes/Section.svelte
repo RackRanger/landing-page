@@ -17,21 +17,27 @@
     function isArchitecturePage() {
         return id === "section4" ;
     }
+    function isObservabilityPage() {
+        return id === "section6" ;
+    }
+    function isLearningPage() {
+        return id === "section5" ;
+    }
 </script>
 
 <section id={id} class="section">
+
     {#if isDashboard()}
-        <h2 class="header">{title}</h2>
+        <header class="header">{title}</header>
         <GrafanaDashboard />
     {:else if isProblemPage()}
-        <h2 class="header">{title}</h2>
+        <header class="header">{title}</header>
         <div class="problemStatement">
-            Server observability is missing a key component like in we need
-
+            Internal monitoring only tells half the story
         </div>
     {:else if isArchitecturePage()}
         <div >
-            <h2 class="header">{title}</h2>
+            <header class="header">{title}</header>
 
             <div class="containerwhite">
                 <div class="white-rounded-text-field">
@@ -54,6 +60,9 @@
             </div>
 
         </div>
+
+    {:else if isLearningPage()}
+        <header class="header">{title}</header>
 
     {/if}
 
@@ -90,9 +99,10 @@
         padding: 30px;
         font-size: 50px;
         margin:0px;
+        justify-content: center;
+        display: grid;
     }
     .section {
-        scroll-snap-align: start;
         height: 100vh;
     }
     .white-rounded-text-field {
