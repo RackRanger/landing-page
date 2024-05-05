@@ -47,12 +47,14 @@
             <button class="button" on:click={toggleFullScreen}>Expand</button>
         </div>
     {:else if isProblemPage()}
-      <div class="containerwhite">
+        <header class="different-header">{title}</header>
+        <div class="containerwhite">
           <div class="white-rounded-text-field-the-idea">
-              <header class="header">{title}</header>
               <div class="problemStatement">
-                  Internal monitoring only tells half the story
-                  <img style="height:250px; width:250px;" src="servertografana.svg" alt="Description of the image">
+                  You can use Grafana to display server usage data.<br>
+                  You can use Grafana to display rack usage data.<br>
+                  Let's use Grafana to display rack enviroment data.
+                  <!--img style="height:250px; width:250px;" src="servertografana.svg" alt="Description of the image"-->
               </div>
           </div>
       </div>
@@ -174,15 +176,15 @@
     }
     .button {
         display: grid;
-        margin-left: 50px;
         padding: 8px 16px;
-        justify-content: center;
         background-color: #3A5A40 ;
         color: white;
         border: none;
         border-radius: 5px;
         cursor: pointer;
         height: 40px;
+        align-items: center;
+
     }
     .header {
         margin-bottom: 30px;
@@ -190,10 +192,17 @@
         justify-content: center;
         display: grid;
         font-weight: bold;
-
+        margin-top: 45px;
+    }
+    .different-header {
+        margin-bottom: 30px;
+        font-size: 50px;
+        justify-content: center;
+        display: grid;
+        font-weight: bold;
     }
     .section {
-        height: 100vh;
+
     }
     .white-rounded-text-field {
         width: 45%; /* Adjust width as needed */
@@ -225,6 +234,8 @@
         color: black;
         display:grid;
         justify-content: center;
+        font-weight: bold;
+
 
     }
 

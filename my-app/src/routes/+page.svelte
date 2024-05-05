@@ -60,29 +60,34 @@
   }
 
   .navbaritems {
+    margin-top: 4px;
+    font-weight: bold;
     margin-right: 5px;
     text-decoration: none; /* Remove underline */
     color: black; /* Inherit color from parent */
+    margin-left: 10px;
   }
   .global-header {
     position: fixed;
     display: flex;
-    height: 70px;
+    height: 55px;
     align-items: center; /* Center vertically */
-    margin-left: 30px;
+    width: 100%;
+    background-color: #A3B18A ;
   }
 
   .mainbody {
-     margin-top: 100px;
-     overflow-y: auto;
-      margin-right: -15px;
+    margin-top: 100px;
+    overflow-y: auto;
+    margin-right: -15px;
     scroll-snap-type: y mandatory;
-     height: calc(100vh - 100px); /* Set height to fill the remaining viewport space after considering the fixed header */
+    height: calc(100vh - 100px); /* Set height to fill the remaining viewport space after considering the fixed header */
   }
   .logo {
     width: 120px;
     height: 120px;
     margin-right: 10px;
+    margin-left: 30px;
   }
 
 
