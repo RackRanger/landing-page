@@ -143,6 +143,7 @@
         margin-bottom: 80px;
     }
     .button-wrapper {
+        margin-top: 20px;
         justify-content: center;
         display: flex;
     }
