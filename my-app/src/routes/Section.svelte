@@ -60,15 +60,18 @@
     {:else if isArchitecturePage()}
         <div >
             <header class="header">{title}</header>
+            <div style="justify-content: center; display: flex">
+                <img class="our-approach-diagram" src="diagram.svg" alt="Description of the image">
 
-            <div class="containerwhite">
+            </div>
+            <!--div class="containerwhite">
                 <div class="white-rounded-text-field">
                     <h1 style="text-align: center;"> The Team</h1>
                 </div>
                 <div class="white-rounded-text-field">
                     <h1 style="text-align: center;"> Our Infrastructure</h1>
                 </div>
-            </div>
+            </div-->
 
         </div>
     {:else if isIntropage()}
@@ -116,6 +119,10 @@
 
 
 <style>
+    .our-approach-diagram {
+        width: 700px;
+        height: 700px;
+    }
     .x-image {
         width: 40px;
         height: 40px;

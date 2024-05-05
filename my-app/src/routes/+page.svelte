@@ -21,7 +21,7 @@
   <img class="logo" src="logo.svg" alt="Description of the image">
   <a href="#section2" class="navbaritems">Our Idea</a>
   <a href="#section3" class="navbaritems">Our Dashboard</a>
-  <a href="#section4" class="navbaritems">Our Architecture</a>
+  <a href="#section4" class="navbaritems">Our Approach</a>
   <a href="#section5" class="navbaritems">Our Learnings</a>
 
 </header>
@@ -33,7 +33,7 @@
   </Section>
   <Section id="section3" title="Our Dashboard">
   </Section>
-  <Section id="section4" title="Our Architecture">
+  <Section id="section4" title="Our Approach">
 
   </Section>
   <Section id="section5" title="Our Learnings">
