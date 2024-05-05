@@ -78,10 +78,7 @@
 
   .mainbody {
     margin-top: 55px;
-    overflow-y: auto;
-    margin-right: -15px;
-    scroll-snap-type: y mandatory;
-    height: calc(100vh - 100px); /* Set height to fill the remaining viewport space after considering the fixed header */
+    height: calc(100vh - 100px);
   }
   .logo {
     width: 120px;

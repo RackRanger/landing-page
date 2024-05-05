@@ -47,7 +47,7 @@
             <button class="button" on:click={toggleFullScreen}>Expand</button>
         </div>
     {:else if isProblemPage()}
-        <header class="header">{title}</header>
+        <header class="different-header">{title}</header>
         <div class="containerwhite">
             <div class="white-rounded-text-field-the-idea">
                 <div class="problemStatement">
@@ -103,7 +103,7 @@
             <div style="padding: 30px;">
                 <img class="profile-pic" src="valentin.svg" alt="Description of the image">
                 <div class="personal-learning">Valentin</div>
-                <div class="personal-learning"> "I build this amazing website using svelte kit, a framework I've never used before!"  </div>
+                <div class="personal-learning"> "I build this amazing website using sveltekit, a framework I've never used before!"  </div>
             </div >
             <div style="padding: 30px;">
                 <img class="profile-pic" src="miika.svg" alt="Description of the image">
@@ -146,7 +146,7 @@
         align-items: start; /* Center vertically */
         margin-left: 100px;
         margin-right: 100px;
-        margin-bottom: 80px;
+        padding-bottom: 160px;
     }
     .button-wrapper {
         margin-top: 20px;
@@ -178,8 +178,6 @@
         height: 100vh; /* Set height to 100% of viewport height */
         align-items: center;
         display: grid;
-
-
     }
     .button {
         display: grid;
@@ -207,19 +205,12 @@
         justify-content: center;
         display: grid;
         font-weight: bold;
+        margin-top: 100px;
     }
     .section {
 
     }
-    .white-rounded-text-field {
-        width: 45%; /* Adjust width as needed */
-        max-width: 45%; /* Set a maximum width if necessary */
-        padding: 20px;
-        background-color: #f5f5f5; /* Light gray color */
-        border-radius: 10px;
-        margin-right: 20px; /* Add spacing between the boxes */
-        color: black;
-    }
+
 
     .white-rounded-text-field-the-idea {
         width: 90%; /* Adjust width as needed */
