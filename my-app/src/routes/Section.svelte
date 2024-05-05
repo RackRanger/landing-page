@@ -90,23 +90,23 @@
             <div style="padding: 30px;">
                 <img class="profile-pic" src="justus.svg" alt="Description of the image">
                 <div class="personal-learning">Justus</div>
-                <div class="personal-learning"> "It was an amazing weekend for me ite in svelte a framework I never used before!"  </div>
+                <div class="personal-learning"> ""  </div>
             </div>
             <div style="padding: 30px;">
-                <img class="profile-pic" src="slushee.svg" alt="Description of the image">
+                <img class="profile-pic" src="pol.svg" alt="Description of the image">
                 <div class="personal-learning">Pol</div>
-                <div class="personal-learning"> "It was an aelte a framework I never used before!"  </div>
+                <div class="personal-learning"> ""  </div>
 
             </div>
             <div style="padding: 30px;">
                 <img class="profile-pic" src="valentin.svg" alt="Description of the image">
                 <div class="personal-learning">Valentin</div>
-                <div class="personal-learning"> "It was aable to build this website in svelte a framework I never used before!"  </div>
+                <div class="personal-learning"> "I build this amazing website using svelte kit, a framework I've never used before!"  </div>
             </div >
             <div style="padding: 30px;">
                 <img class="profile-pic" src="miika.svg" alt="Description of the image">
                 <div class="personal-learning">Miika</div>
-                <div class="personal-learning"> "It was an amazing weekend for me because I was able to build this website in svelte a framework I never used before!"  </div>
+                <div class="personal-learning"> "I build this amazing website using svelte kit, a framework I've never used before!I build this amazing website using svelte kit, a framework I've never used before!I build this amazing website using svelte kit, a framework I've never used before!I build this amazing website using svelte kit, a framework I've never used before!"  </div>
 
             </div>
         </div>
@@ -128,7 +128,7 @@
         width: 200px;
         margin-top: 15px;
         color: black;
-
+        font-weight: bold;
     }
     .profile-pic {
         width: 200px;
@@ -137,10 +137,10 @@
     .profile-pics {
         display: flex;
         justify-content: center; /* Center horizontally */
-        align-items: center; /* Center vertically */
+        align-items: start; /* Center vertically */
         margin-left: 100px;
         margin-right: 100px;
-
+        margin-bottom: 80px;
     }
     .button-wrapper {
         justify-content: center;

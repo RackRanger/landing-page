@@ -19,21 +19,21 @@
 
 <header class="global-header">
   <img class="logo" src="logo.svg" alt="Description of the image">
-  <a href="#section2" class="navbaritems">The Idea</a>
-  <a href="#section3" class="navbaritems">Our Dashboards</a>
-  <a href="#section4" class="navbaritems">The Architecture</a>
+  <a href="#section2" class="navbaritems">Our Idea</a>
+  <a href="#section3" class="navbaritems">Our Dashboard</a>
+  <a href="#section4" class="navbaritems">Our Architecture</a>
   <a href="#section5" class="navbaritems">Our Learnings</a>
 
 </header>
 
 <main class ="mainbody">
 
-  <Section id="section2" title="The Idea">
+  <Section id="section2" title="Our Idea">
 
   </Section>
-  <Section id="section3" title="Our Dashboards">
+  <Section id="section3" title="Our Dashboard">
   </Section>
-  <Section id="section4" title="The Architecture">
+  <Section id="section4" title="Our Architecture">
 
   </Section>
   <Section id="section5" title="Our Learnings">
