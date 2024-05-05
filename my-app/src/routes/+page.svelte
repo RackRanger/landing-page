@@ -87,8 +87,4 @@
     margin-left: 30px;
   }
 
-
-
-
-
 </style>

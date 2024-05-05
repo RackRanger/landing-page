@@ -111,8 +111,14 @@
                 <div class="personal-learning"> "I build this amazing website using svelte kit, a framework I've never used before!I build this amazing website using svelte kit, a framework I've never used before!I build this amazing website using svelte kit, a framework I've never used before!I build this amazing website using svelte kit, a framework I've never used before!"  </div>
 
             </div>
-        </div>
 
+        </div>
+        <div class="devpost-link-wrapper">
+            <div class="devpost-link">
+                Want to learn more about our project? Check out our&nbsp; <a href="https://devpost.com/software/serfana" class="devpost-link">devpost</a>!
+            </div>
+
+        </div>
     {/if}
 
 </section>
@@ -136,6 +142,18 @@
         color: black;
         font-weight: bold;
     }
+    .devpost-link {
+        padding-bottom: 40px;
+        font-weight: bold;
+        color: black;
+        justify-content: center;
+        display: flex;
+        font-size: 23px;
+    }
+    .devpost-link-wrapper {
+        margin-top: 20px;
+
+    }
     .profile-pic {
         width: 200px;
         height: 200px;
@@ -146,7 +164,6 @@
         align-items: start; /* Center vertically */
         margin-left: 100px;
         margin-right: 100px;
-        padding-bottom: 160px;
     }
     .button-wrapper {
         margin-top: 20px;
@@ -162,8 +179,6 @@
         justify-content: center;
         display: flex;
         align-items: center;
-
-
     }
     .images {
         display: flex;
@@ -189,7 +204,6 @@
         cursor: pointer;
         height: 40px;
         align-items: center;
-
     }
     .header {
         margin-bottom: 30px;
@@ -210,7 +224,6 @@
     .section {
 
     }
-
 
     .white-rounded-text-field-the-idea {
         width: 90%; /* Adjust width as needed */
