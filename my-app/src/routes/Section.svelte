@@ -90,26 +90,27 @@
         <header class="header">{title}</header>
         <div class="profile-pics">
             <div style="padding: 30px;">
-                <img class="profile-pic" src="justus.svg" alt="Description of the image">
-                <div class="personal-learning">Justus</div>
-                <div class="personal-learning"> ""  </div>
+                <img class="profile-pic" src="miika.svg" alt="Description of the image">
+                <div class="personal-learning">Miika</div>
+                <div class="personal-learning"> "I tackled embedded microcontroller programming for the first time and overcame server management challenges."</div>
+
             </div>
             <div style="padding: 30px;">
                 <img class="profile-pic" src="pol.svg" alt="Description of the image">
                 <div class="personal-learning">Pol</div>
-                <div class="personal-learning"> ""  </div>
+                <div class="personal-learning"> "I mastered network management on low-power devices and dealt with cross compiling for embedded targets with no OS."</div>
 
             </div>
             <div style="padding: 30px;">
                 <img class="profile-pic" src="valentin.svg" alt="Description of the image">
                 <div class="personal-learning">Valentin</div>
-                <div class="personal-learning"> "I build this amazing website using sveltekit, a framework I've never used before!"  </div>
+                <div class="personal-learning"> "I used SvelteKit for the first time to build this website and thereby learned the intricacies of UI design and SVGs."</div>
             </div >
-            <div style="padding: 30px;">
-                <img class="profile-pic" src="miika.svg" alt="Description of the image">
-                <div class="personal-learning">Miika</div>
-                <div class="personal-learning"> "I build this amazing website using svelte kit, a framework I've never used before!I build this amazing website using svelte kit, a framework I've never used before!I build this amazing website using svelte kit, a framework I've never used before!I build this amazing website using svelte kit, a framework I've never used before!"  </div>
 
+            <div style="padding: 30px;">
+                <img class="profile-pic" src="justus.svg" alt="Description of the image">
+                <div class="personal-learning">Justus</div>
+                <div class="personal-learning"> "I discovered how valuable hardware prototyping with everyday items can be, boosting our project's uniqueness and team dynamics."</div>
             </div>
 
         </div>
