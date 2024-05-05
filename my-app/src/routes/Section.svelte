@@ -47,17 +47,16 @@
             <button class="button" on:click={toggleFullScreen}>Expand</button>
         </div>
     {:else if isProblemPage()}
-        <header class="different-header">{title}</header>
+        <header class="header">{title}</header>
         <div class="containerwhite">
-          <div class="white-rounded-text-field-the-idea">
-              <div class="problemStatement">
-                  You can use Grafana to display server usage data.<br>
-                  You can use Grafana to display rack usage data.<br>
-                  Let's use Grafana to display rack enviroment data.
-                  <!--img style="height:250px; width:250px;" src="servertografana.svg" alt="Description of the image"-->
-              </div>
-          </div>
-      </div>
+            <div class="white-rounded-text-field-the-idea">
+                <div class="problemStatement">
+                    <p class="line"><span class="icon">🖥️</span> You can use Grafana to display server usage data.</p>
+                    <p class="line"><span class="icon">📊</span> You can use Grafana to display rack usage data.</p>
+                    <p class="line"><span class="icon">🌡️</span> Let's use Grafana to display rack environment data.</p>
+                </div>
+            </div>
+        </div>
     {:else if isArchitecturePage()}
         <div >
             <header class="header">{title}</header>
@@ -238,6 +237,32 @@
         font-weight: bold;
 
 
+    }
+
+
+    .line {
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-bottom: 10px;
+        color: #444;
+        display: flex;
+        align-items: center;
+        animation: fadeIn 1s ease-in;
+    }
+
+    .icon {
+        margin-right: 10px;
+    }
+
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+            transform: translateX(-20%);
+        }
+        100% {
+            opacity: 1;
+            transform: translateX(0);
+        }
     }
 
 

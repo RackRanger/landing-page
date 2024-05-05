@@ -77,7 +77,7 @@
   }
 
   .mainbody {
-    margin-top: 100px;
+    margin-top: 55px;
     overflow-y: auto;
     margin-right: -15px;
     scroll-snap-type: y mandatory;
